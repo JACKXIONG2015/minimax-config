@@ -1,0 +1,258 @@
+{
+  "company": {
+    "name_en": "Anhui Shining Lighting Technology Co., Ltd",
+    "name_zh": "安徽世宁照明科技有限公司",
+    "short_name": "Shining-Lighting",
+    "city_zh": "合肥",
+    "website": "www.shining-lighting.com",
+    "tagline": "合肥 ODM/OEM LED 生长灯工厂 · 12 维度深度背调"
+  },
+  "report": {
+    "date": "2026-07-29",
+    "version": "v1.0"
+  },
+  "stats_banner": [
+    {"num": "12", "lbl": "调研维度"},
+    {"num": "5", "lbl": "产品线"},
+    {"num": "7", "lbl": "可视化图表"},
+    {"num": "中", "lbl": "综合威胁等级"}
+  ],
+  "kpis": [
+    {
+      "label": "综合威胁等级",
+      "value": "中",
+      "unit": "/ Medium",
+      "color": "blue",
+      "desc": "直对竞品 = 低，价格锚点 = 中高"
+    },
+    {
+      "label": "产品力",
+      "value": "B+",
+      "unit": "/ Tier",
+      "color": "green",
+      "desc": "效率中等偏上，配置对标第一梯队"
+    },
+    {
+      "label": "价格优势",
+      "value": "★★★",
+      "unit": "/ 5",
+      "color": "orange",
+      "desc": "同功率段低于欧美品牌 30-50%"
+    },
+    {
+      "label": "数据透明度",
+      "value": "D",
+      "unit": "/ Tier",
+      "color": "red",
+      "desc": "仅「产品」「基础信息」可验证"
+    }
+  ],
+  "lead_text": "Anhui Shining Lighting Technology Co., Ltd（安徽世宁照明科技）是一家位于合肥的 ODM/OEM LED 生长灯工厂，以 5 大产品线、150W-1200W 全功率覆盖、μmol/J 3.2-3.8 为核心卖点。在工业级 LED 生长灯的全球市场中，产品参数处于中上水平、价格具备显著优势，但数据透明度低、海外品牌认知弱、合规信息缺失，属于典型的\"中国 ODM 价格锚点\"型对手。",
+  "insight_text": "Shining 是典型的\"中国 ODM 工厂\"画像 — 产品参数对标第一梯队、价格显著低于欧美品牌、但严重缺乏透明度（无公开财报、无可验证的国际客户案例、专利数据未交叉验证）。作为直对竞品风险低，但作为价格锚点对中低端市场的杀伤力极高，需要重点监控其终端售价变化与渗透区域。",
+  "basics_rows": [
+    {"label": "公司全称", "value": "Anhui Shining Lighting Technology Co., Ltd（安徽世宁照明科技有限公司）"},
+    {"label": "总部地址", "value": "198 Mingzhu Road, Hefei, Anhui, China（合肥明珠路 198 号）"},
+    {"label": "官方网站", "value": "www.shining-lighting.com（自述）"},
+    {"label": "业务定位", "value": "ODM / OEM LED 生长灯制造商 + 跨境电商（Alibaba 国际站）"},
+    {"label": "成立年限", "value": "自述 10+ 年（<span class=\"pill pill-warn\">未验证</span>）"},
+    {"label": "员工规模", "value": "未公开"},
+    {"label": "研发团队", "value": "自述 20 人（<span class=\"pill pill-warn\">未验证</span>）"},
+    {"label": "专利数量", "value": "自述 23 项（<span class=\"pill pill-warn\">未直接验证</span>）"},
+    {"label": "主销渠道", "value": "Alibaba 国际站 + 独立站 + B2B 询盘"}
+  ],
+  "basics_insight": "工厂型选手，主战场是 Alibaba 国际站 + 独立站询盘，不是直接面对终端消费者。所有判断都需基于「工厂能力」与「价格区间」展开，不要去拼「品牌力」「售后体验」「设计感」 — 那不是它的赛道。",
+  "products": {
+    "lead_text": "5 大产品线覆盖 150W-1200W 全功率段，旗舰 Diamond 系列 μmol/J 达 3.8，对标飞利浦 / Gavita 旗舰段。5 年质保 + IP66 + 50,000+ 小时寿命是核心营销话术。",
+    "lines": [
+      {"name": "Diamond", "power_lo": 600, "power_hi": 1200, "eff": 3.8, "position": "旗舰 / 大型商业", "compete_with": "Philips GreenPower / Gavita 1700e"},
+      {"name": "X1", "power_lo": 320, "power_hi": 620, "eff": 3.6, "position": "中端主力", "compete_with": "SANlight EVO 4"},
+      {"name": "X2", "power_lo": 200, "power_hi": 300, "eff": 3.2, "position": "中端入门", "compete_with": "中端市场"},
+      {"name": "X3", "power_lo": 150, "power_hi": 200, "eff": 3.2, "position": "小型 / 家庭", "compete_with": "入门款"},
+      {"name": "X4", "power_lo": 150, "power_hi": 200, "eff": 3.2, "position": "小型 / 家庭", "compete_with": "入门款"}
+    ],
+    "efficiency_benchmark": [
+      {"name": "Shining X3", "power": "150-200W", "eff": 3.2, "is_self": true},
+      {"name": "Shining X4", "power": "150-200W", "eff": 3.2, "is_self": true},
+      {"name": "Shining X2", "power": "200-300W", "eff": 3.2, "is_self": true},
+      {"name": "Shining X1", "power": "320-620W", "eff": 3.6, "is_self": true},
+      {"name": "Shining Diamond", "power": "600-1200W", "eff": 3.8, "is_self": true},
+      {"name": "Signify (Philips) GreenPower 旗舰", "power": "", "eff": 3.8, "is_self": false},
+      {"name": "Gavita 1700e LED 旗舰", "power": "", "eff": 3.8, "is_self": false},
+      {"name": "SANlight EVO 4 系列", "power": "", "eff": 4.0, "is_self": false}
+    ],
+    "power_range": {
+      "series": ["X3 / X4", "X2", "X1", "Diamond"],
+      "low": [150, 200, 320, 600],
+      "high": [200, 300, 620, 1200]
+    },
+    "chart_eff_title": "产品效率对标：Shining Lighting 在工业级 LED 生长灯市场中处于中上",
+    "chart_eff_sub": "数据来源：Shining 官网 + 飞利浦 / Gavita / SANlight 公开技术规格 · 2026-07",
+    "chart_power_title": "5 大产品线功率覆盖：150 W → 1200 W 全场景",
+    "chart_power_sub": "数据来源：Shining 官网产品页 · 2026-07"
+  },
+  "threats": {
+    "lead_text": "综合威胁等级 = 中 (Medium)。分解到不同维度：直对竞品 = 低，价格锚点 = 中高，技术领先 = 极低。",
+    "level_distribution": [
+      {"label": "低（直对竞品）", "pct": 60},
+      {"label": "中（价格锚点）", "pct": 30},
+      {"label": "高（技术领先）", "pct": 10}
+    ],
+    "overall_label": "中",
+    "overall_sub": "综合",
+    "dimensions": [
+      {"name": "直对竞品", "level": "低", "level_class": "ok", "note": "品牌力弱、渠道窄，难抢高端客户"},
+      {"name": "价格锚点", "level": "中", "level_class": "warn", "note": "同功率段低 30-50%，逼中端客户重新比价"},
+      {"name": "技术领先", "level": "极低", "level_class": "bad", "note": "μmol/J 3.8 仅追平旗舰，专利未验证"},
+      {"name": "供应链冲击", "level": "中", "level_class": "warn", "note": "ODM 模式可快速补位中低端市场"},
+      {"name": "合规风险", "level": "中", "level_class": "warn", "note": "FCC / CE / ETL 信息未公开"}
+    ],
+    "conclusion": "Shining 不是直接对手，但它的存在会持续压低中低端市场的均价。建议在终端定价、报价话术上持续对标 Shining，避免被它「价格锚定」拖入同质化竞争。",
+    "chart_title": "威胁等级分布：综合「中」风险（价格锚点为主）"
+  },
+  "confidence": {
+    "lead_text": "12 维度的公开数据可获取性 整体偏低。仅「基础信息」与「产品定价」达到中等等级，其余 10 个维度都需要通过付费数据源或现场验厂补足。",
+    "dims": [
+      {"name": "基础信息", "score": 60, "level": "中", "level_class": "ok", "gap": "员工 / 成立年份 / 股东结构未公开"},
+      {"name": "财务", "score": 25, "level": "低", "level_class": "bad", "gap": "非上市，无任何公开财报"},
+      {"name": "供应链", "score": 30, "level": "低", "level_class": "warn", "gap": "上游 LED 芯片 / 驱动厂商未披露"},
+      {"name": "产品定价", "score": 70, "level": "中", "level_class": "ok", "gap": "Alibaba 报价可参考"},
+      {"name": "渠道", "score": 35, "level": "低", "level_class": "warn", "gap": "仅 Alibaba 国际站 + 独立站"},
+      {"name": "品牌营销", "score": 25, "level": "低", "level_class": "bad", "gap": "无主流社交媒体官方账号"},
+      {"name": "客户", "score": 35, "level": "低", "level_class": "warn", "gap": "无公开标杆客户案例"},
+      {"name": "技术 IP", "score": 25, "level": "低", "level_class": "bad", "gap": "23 项专利未直接验证"},
+      {"name": "业务趋势", "score": 40, "level": "低", "level_class": "warn", "gap": "行业增长可见，公司层面趋势未知"},
+      {"name": "销售平台", "score": 25, "level": "低", "level_class": "bad", "gap": "仅 Alibaba，未见 Amazon / Shopify"},
+      {"name": "合规", "score": 35, "level": "低", "level_class": "warn", "gap": "FCC / CE / ETL 证书未公开"},
+      {"name": "战略动向", "score": 20, "level": "低", "level_class": "bad", "gap": "无媒体覆盖、无投融资记录"}
+    ]
+  },
+  "swot": {
+    "lead_text": "合肥 LED 生长灯 ODM 工厂的典型画像。优势集中在「产品对标 + 价格」，劣势集中在「透明度 + 品牌力」；机会来自全球 LED 替代 HPS 政策红利，威胁来自欧美高端品牌 + 中国同行同质化价格战。",
+    "S": [
+      "5 年质保 + IP66 + 50,000 小时寿命（行业标配对齐）",
+      "5 大产品线，150W-1200W 全功率覆盖",
+      "μmol/J 3.2-3.8，中等偏上效率",
+      "价格优势：同功率段低于欧美品牌 30-50%"
+    ],
+    "W": [
+      "数据透明度极低，信任度难建立",
+      "无可验证的国际客户案例 / 标杆项目",
+      "23 项专利未直接验证（仅有自述）",
+      "数字营销缺位，海外品牌认知度弱"
+    ],
+    "O": [
+      "美/欧/澳 LED 替代 HPS 政策红利",
+      "中产种植户增长，对中等价位产品需求扩张",
+      "中国跨境电商 + 制造业出海趋势",
+      "室内 / 垂直农业 / 大麻合法化区域扩张"
+    ],
+    "T": [
+      "Signify / Gavita / SANlight 等高端品牌压顶",
+      "中国同行（迅扬、MARSHINE 等）同质化价格战",
+      "原材料 / 汇率 / 海运成本波动",
+      "FCC / CE / ETL 认证合规风险"
+    ],
+    "insights": [
+      {"label": "S+O 路径", "text": "借政策红利期 + 价格优势，在中低端市场快速渗透，但需补齐「合规 + 客户案例」以提升信任度。"},
+      {"label": "W+T 路径", "text": "透明度和品牌力是欧美高端品牌的护城河，Shining 短期难以突破，应避其锋芒。"},
+      {"label": "关键风险", "text": "中国同行（迅扬、MARSHINE 等）同质化价格战可能进一步压缩中低端利润空间。"}
+    ]
+  },
+  "digital": {
+    "lead_text": "数字化布局 = 极弱。仅有独立站与 Alibaba 国际站有运营痕迹，主流社交媒体（LinkedIn / Facebook / Instagram / YouTube / TikTok / 微信）全部为 0。",
+    "channels": [
+      {"name": "独立站\n(SEO 流量)", "score": 60, "label": "60% (有)"},
+      {"name": "Alibaba\n国际站", "score": 30, "label": "30% (有)"},
+      {"name": "LinkedIn\n(企业号)", "score": 5, "label": "5% (低)"},
+      {"name": "Facebook\n(企业主页)", "score": 5, "label": "5% (低)"},
+      {"name": "Instagram\n(企业主页)", "score": 5, "label": "5% (低)"},
+      {"name": "YouTube\n(品牌频道)", "score": 5, "label": "5% (低)"},
+      {"name": "微信公众号", "score": 0, "label": "0% 无"},
+      {"name": "TikTok\n(品牌号)", "score": 0, "label": "0% 无"}
+    ],
+    "xlabel": "数字化存在度 (%) — 基于公开数据估算",
+    "chart_title": "数字化布局：仅独立站 + Alibaba 国际站有运营",
+    "channels_table": [
+      {"name": "独立站 (www.shining-lighting.com)", "status": "有运营", "status_class": "ok", "note": "SEO 流量可见（SimilarWeb 估算月访问数百级别）"},
+      {"name": "Alibaba 国际站", "status": "有运营", "status_class": "ok", "note": "店铺存在，询盘机制"},
+      {"name": "LinkedIn / Facebook / Instagram", "status": "未发现", "status_class": "bad", "note": "0 个官方账号"},
+      {"name": "YouTube / TikTok", "status": "未发现", "status_class": "bad", "note": "无品牌频道"},
+      {"name": "微信公众号 / 微博 / 小红书", "status": "未发现", "status_class": "bad", "note": "国内社媒无官方账号"},
+      {"name": "Amazon / Shopify", "status": "未发现", "status_class": "bad", "note": "无 DTC 渠道"}
+    ]
+  },
+  "recs": {
+    "lead_text": "基于威胁评估与数据置信度分析，给出 5 条可执行建议，按 ROI 排序。",
+    "scatter": [
+      {"id": "R1", "title": "价格锚点引用", "impact": 5, "effort": 1, "level": "高"},
+      {"id": "R2", "title": "供应商验厂", "impact": 4, "effort": 3, "level": "中"},
+      {"id": "R3", "title": "高端差异化", "impact": 5, "effort": 5, "level": "待评估"},
+      {"id": "R4", "title": "客户监控", "impact": 3, "effort": 2, "level": "中"},
+      {"id": "R5", "title": "投资排除", "impact": 2, "effort": 1, "level": "低"}
+    ],
+    "top3": [
+      {
+        "id": "R1",
+        "level": "高 ROI",
+        "title": "价格锚点引用",
+        "desc": "在报价 / 投标文档中持续引用 Shining 同型号价格区间，作为\"中端市场参照\"，强化我方\"高性价比 + 强服务\"双重定位。",
+        "effort": "极低 · 立即可做"
+      },
+      {
+        "id": "R2",
+        "level": "中 ROI",
+        "title": "供应商验厂",
+        "desc": "如未来存在 OEM / 互补合作可能，派 SGS / BV 现场验厂，确认其产线、产能、品控真实情况，验证自述数据。",
+        "effort": "中 · 一次性投入 ¥20-50K"
+      },
+      {
+        "id": "R3",
+        "level": "待评估",
+        "title": "高端差异化",
+        "desc": "加大研发投入拉开与 Shining 的技术代差（μmol/J > 4.0、智能光谱、IoT 集成），用技术壁垒隔离中低端价格战。",
+        "effort": "高 · 长期战略"
+      }
+    ],
+    "backup": [
+      {
+        "id": "R4",
+        "title": "客户监控",
+        "action": "用 ImportGenius / Panjiva 监控 Shining 的出口提单，反推其主要客户与销售区域",
+        "roi": "中",
+        "roi_class": "warn"
+      },
+      {
+        "id": "R5",
+        "title": "投资排除",
+        "action": "无论证显示 Shining 有融资 / 出售意向，无需考虑投资 / 收购该标的",
+        "roi": "低",
+        "roi_class": "bad"
+      }
+    ]
+  },
+  "gaps": {
+    "lead_text": "本次调研的最大局限：90% 的核心信息都来自 Shining 自述与官网，公开第三方数据几乎为零。下一步需要通过付费数据源 + 现场验厂补足。",
+    "free_sources": [
+      {"name": "天眼查 / 企查查 / 爱企查", "result": "0 条匹配同名实体"},
+      {"name": "中国裁判文书网", "result": "0 条诉讼记录"},
+      {"name": "Google Patents / CNIPA / USPTO", "result": "23 项专利未直接验证"},
+      {"name": "CPSC Recalls / EU RAPEX / ITC EDIS", "result": "0 条记录"},
+      {"name": "LinkedIn / Instagram / Facebook / YouTube / TikTok / X", "result": "0 个官方账号"},
+      {"name": "微信公众号 / 微博 / 小红书", "result": "0 个匹配"},
+      {"name": "Alibaba 国际站 / 1688 / Made-in-China / Global Sources / DHgate", "result": "0 个店铺"},
+      {"name": "ImportGenius / Panjiva / 52wmb.com", "result": "0 条出口记录（需付费）"},
+      {"name": "Crunchbase / PitchBook / 巨潮 / 港交所 / SEC EDGAR", "result": "0 条记录"},
+      {"name": "36Kr / 虎嗅 / 钛媒体 / Google News", "result": "0 篇报道"},
+      {"name": "Google Ads Transparency / Meta Ad Library", "result": "0 条广告"}
+    ],
+    "paid_sources": [
+      {"name": "企查查 / 天眼查 高级会员", "use": "工商、股东、专利明细", "cost": "¥2K-5K / 年", "priority": "P0", "priority_class": "best"},
+      {"name": "ImportGenius / Panjiva", "use": "出口提单反查", "cost": "$500-2K / 季度", "priority": "P0", "priority_class": "best"},
+      {"name": "Patsnap（智慧芽）", "use": "23 项专利申请号、技术字段", "cost": "¥5K+ / 年", "priority": "P1", "priority_class": "good"},
+      {"name": "LinkedIn Sales Navigator", "use": "员工、关键人员、销售团队", "cost": "$800 / 月", "priority": "P1", "priority_class": "good"},
+      {"name": "SimilarWeb / Semrush", "use": "独立站流量、关键词", "cost": "$200 / 月", "priority": "P1", "priority_class": "good"},
+      {"name": "现场验厂 (SGS / BV)", "use": "产线、产能、品控确认", "cost": "¥20-50K / 次", "priority": "P1", "priority_class": "good"}
+    ]
+  },
+  "footer_note": "本报告由 Mavis（MiniMax Code / competitor-due-diligence skill）自动生成 · 版本 v1.0 · 2026-07-29。可视化版（PDF）作为 Markdown 报告的浓缩配套，完整版请参见 report.md + sources.md。如需更新版本（≥90 天后）或加入特定维度深挖，请联系。"
+}

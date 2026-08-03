@@ -1,0 +1,31 @@
+# ===== 登录凭证（绝对不能同步）=====
+local-runtime.auth.json
+
+# ===== 会话数据库（本地存，不上传）=====
+sqlite.db
+sqlite.db-shm
+sqlite.db-wal
+
+# ===== 运行时临时数据 =====
+background-tasks/
+context-replacements/
+context-snapshots/
+v2/
+
+# ===== 用户工作区（每台机器自己的项目数据）=====
+workspace/
+
+# ===== 运行时二进制/缓存 =====
+bin/
+
+# ===== 内置技能（对方机器会自己装，不需要 push）=====
+.builtin-skills/
+
+# ===== 系统/编辑器垃圾 =====
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
