@@ -1,0 +1,11 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "C:\\Users\\xiong\\.mavis\\plugins\\marketplaces\\claude-plugins-official",
+    "lastUpdated": 0,
+    "enabled": true
+  }
+}

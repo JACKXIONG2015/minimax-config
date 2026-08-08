@@ -29,3 +29,31 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+
+# ===== 家庭/本机独有运行时(2026-08-07 加入,远端 .gitignore 未列) =====
+# 日志
+logs/
+# 临时草稿
+scratchpads/
+# 已安装 harness 列表(运行时)
+harnesses/
+# MCP token 缓存(配置在 mcp/mcp.json)
+mcp/tokens.json
+# 插件缓存/市场数据(known_marketplaces.json 是配置)
+plugins/cache/
+plugins/marketplaces/
+# evolve 运行时数据(提案/信号/状态/使用统计)
+evolve/
+# 锁文件/恢复文件
+daemon.lock
+recovery.json
+
+# ===== 本机独有运行时(2026-08-07 家庭电脑加入) =====
+# 内置 skill(每台机器自己装,不需要同步)
+.internal-skills/
+# 各 agent 的工具链(opencode 子目录含 node_modules)
+agents/*/opencode/
+# 各 agent 的内置 prompt 布局文件
+agents/*/.builtin-prompt-layout-v2
+# mavis agent 自己的 daily 日记(机器本地)
+agents/mavis/memory/
