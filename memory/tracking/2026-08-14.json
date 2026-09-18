@@ -1,0 +1,16 @@
+[
+  {
+    "sessionId": "mvs_e4030b9ad40e4c1a90bbb286f84c83d4",
+    "agentName": "worker",
+    "wroteMemory": false,
+    "reminded": false,
+    "checkedAt": "2026-08-14 13:38:10"
+  },
+  {
+    "sessionId": "mvs_62db9fad0bce47edb590c87a060e69b0",
+    "agentName": "explore",
+    "wroteMemory": false,
+    "reminded": false,
+    "checkedAt": "2026-08-14 13:38:12"
+  }
+]
