@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Spider Farmer B084L1Y7KR + B0B4P1PJLY Review Analysis</title>
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Segoe UI','Microsoft YaHei',sans-serif;
+       background:#0f172a; color:#e2e8f0; padding:24px; line-height:1.6; }
+.container { max-width:1400px; margin:0 auto; }
+h1 { font-size:32px; font-weight:800; color:#fff; margin-bottom:8px; }
+h2 { font-size:22px; font-weight:700; color:#fff; margin:32px 0 16px;
+      padding-left:14px; border-left:4px solid #10b981; }
+h3 { font-size:16px; font-weight:600; color:#cbd5e1; margin:18px 0 10px; }
+.subtitle { color:#94a3b8; font-size:14px; margin-bottom:24px; }
+.kpi-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+             gap:12px; margin-bottom:24px; }
+.kpi { background:#1e293b; padding:18px; border-radius:12px; border:1px solid #334155; }
+.kpi .label { color:#94a3b8; font-size:12px; text-transform:uppercase; letter-spacing:.5px; }
+.kpi .value { font-size:32px; font-weight:800; color:#fff; margin:4px 0; }
+.kpi.warn .value { color:#ef4444; }
+.kpi.good .value { color:#10b981; }
+.kpi.info .value { color:#60a5fa; }
+.panel { background:#1e293b; border-radius:12px; padding:20px;
+         border:1px solid #334155; margin-bottom:16px; }
+.rating-row { display:flex; align-items:center; gap:10px; margin:8px 0; }
+.rating-row .lbl { width:30px; font-weight:700; color:#fff; }
+.rating-row .cnt { width:50px; text-align:right; color:#cbd5e1; }
+.rating-row .pct { width:60px; text-align:right; color:#94a3b8; font-size:13px; }
+.bar-wrap { flex:1; background:#0f172a; border-radius:6px; height:14px; overflow:hidden; }
+.bar { height:14px; border-radius:3px; min-width:2px; }
+.table { width:100%; border-collapse:collapse; }
+.table th { background:#334155; color:#cbd5e1; font-size:12px; padding:10px;
+             text-align:left; text-transform:uppercase; letter-spacing:.5px; }
+.table td { padding:10px; border-bottom:1px solid #334155; font-size:13px; }
+.tag { display:inline-block; padding:2px 8px; border-radius:10px;
+        font-size:11px; font-weight:600; }
+.tag-green { background:#064e3b; color:#6ee7b7; }
+.tag-red { background:#7f1d1d; color:#fca5a5; }
+.tag-yellow { background:#78350f; color:#fcd34d; }
+.tag-blue { background:#1e3a8a; color:#93c5fd; }
+.review-card { background:#0f172a; border-radius:10px; padding:14px; margin:8px 0;
+                border-left:3px solid #ef4444; }
+.review-card.pos { border-left-color:#10b981; }
+.review-card .head { display:flex; align-items:center; gap:10px;
+                      margin-bottom:6px; flex-wrap:wrap; }
+.review-card .title { font-weight:600; color:#fff; font-size:14px; margin-bottom:4px; }
+.review-card .meta { color:#64748b; font-size:12px; }
+.review-card .content { color:#cbd5e1; font-size:13px; line-height:1.7;
+                         white-space:pre-wrap; }
+.heatmap { width:100%; border-collapse:collapse; font-size:12px; margin-top:8px; }
+.heatmap th { background:#334155; color:#cbd5e1; padding:8px; font-weight:600; }
+.heatmap td { padding:8px; border:1px solid #334155; text-align:center;
+                color:#fff; font-weight:600; }
+.heatmap td.zero { background:#1e293b; color:#475569; }
+.alert { background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);
+          padding:18px; border-radius:10px; margin-bottom:16px;
+          border-left:4px solid #fca5a5; }
+.alert h3 { color:#fca5a5; margin:0 0 8px; font-size:18px; }
+.alert p { color:#fecaca; font-size:14px; line-height:1.7; }
+.alert.good { background:linear-gradient(135deg,#064e3b 0%,#065f46 100%); border-left-color:#6ee7b7; }
+.alert.good h3 { color:#6ee7b7; }
+.alert.good p { color:#a7f3d0; }
+.action { background:#1e293b; padding:14px 18px; border-radius:10px; margin:8px 0;
+           border-left:4px solid #10b981; }
+.action h4 { color:#10b981; font-size:15px; margin:0 0 6px; }
+.action ul { padding-left:20px; color:#cbd5e1; font-size:13px; }
+.action ul li { margin:4px 0; }
+.action.p0 { border-left-color:#ef4444; }
+.action.p0 h4 { color:#ef4444; }
+.action.p1 { border-left-color:#fb923c; }
+.action.p1 h4 { color:#fb923c; }
+.action.p2 { border-left-color:#fbbf24; }
+.action.p2 h4 { color:#fcd34d; }
+.priority { display:inline-block; padding:2px 8px; border-radius:10px;
+             font-size:11px; font-weight:700; margin-right:6px; }
+.p0-tag { background:#7f1d1d; color:#fca5a5; }
+.p1-tag { background:#7c2d12; color:#fdba74; }
+.p2-tag { background:#713f12; color:#fcd34d; }
+.row { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:16px; }
+.thumb-bad { background:#1e293b; padding:14px; border-radius:10px;
+              border:1px solid #334155; }
+.thumb-bad .label { color:#94a3b8; font-size:11px; text-transform:uppercase; }
+.thumb-bad .value { font-size:24px; font-weight:700; color:#fff; margin:4px 0; }
+.trend-svg { width:100%; height:auto; background:#1e293b; border-radius:10px;
+              border:1px solid #334155; padding:8px; }
+.footnote { color:#64748b; font-size:12px; margin-top:8px; font-style:italic; }
+.source-note { background:#1e293b; padding:14px 18px; border-radius:10px;
+                border:1px solid #334155; margin:8px 0 16px; color:#cbd5e1; font-size:13px; }
+.source-note b { color:#fbbf24; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🕷️ Spider Farmer B084L1Y7KR + B0B4P1PJLY Review Analysis 🌱</h1>
+<div class="subtitle">ASIN 家族: B084L1Y7KR · B0B4P1PJLY · 样本: 327 条 Amazon US 评论 · 数据源: SellerSprite 导出 · 最近数据: 2026-09-13</div>
+
+<div class="alert">
+  <h3>⚠️ 核心结论先看</h3>
+  <p>
+  • 样本均分 <b>3.18</b>（listing 整体偏低,1星占比 <b>27.5%</b>）;<br>
+  • 顶置 1 星差评 <b>75 票"This needs fixed"</b> 与 <b>13 票"Dangerous. I keep getting shocked"</b> — <b style="color:#fecaca">安全性差评是头号挂顶问题</b>;<br>
+  • 头号差评痛点 = <b>死机/早期失效 (16.0%)</b> + <b>客服/保修差 (13.5%)</b> + <b>线缆/插头 (9.0%)</b> — 三项都是"灯坏了 + 没人管"链路;<br>
+  • 偷换零件 (Bait and Switch / Samsung 改 Bridgelux) 有 <b>5 条以上</b> 独立差评覆盖,与竞品 VIPARSPECTRA 同类问题高度一致 — 行业系统性痛点;<br>
+  • 蔬菜 / 育苗 / 开花 场景均分 <b>3.83-4.38</b> 是高分场景 — Spider Farmer 在家种 / 入门级种植户口碑稳;<br>
+  • 季度趋势看,<b>2023-Q4 出现差评率峰值 87.5% (n=8,样本小但风险信号)</b> · 2024-2026 回归到 25-45% 区间,长期看 <b>30% 上下波动</b>,未明显恶化也未明显改善。
+  </p>
+</div>
+
+<h2>1. 数据总览</h2>
+<div class="kpi-grid">
+  <div class="kpi "><div class="label">Total Reviews</div><div class="value">327</div></div>
+  <div class="kpi warn"><div class="label">均分</div><div class="value">3.18</div></div>
+  <div class="kpi warn"><div class="label">1 星比例</div><div class="value">27.5%</div></div>
+  <div class="kpi good"><div class="label">5 星比例</div><div class="value">30.6%</div></div>
+  <div class="kpi info"><div class="label">VP 比例</div><div class="value">95.4%</div></div>
+  <div class="kpi info"><div class="label">时间跨度</div><div class="value">2020-06-19 → 2026-09-13</div></div>
+</div>
+
+<h3>📊 评分分布</h3>
+<div class="panel">
+  
+    <div class="rating-row">
+      <div class="lbl">5★</div>
+      <div class="bar-wrap"><div class="bar" style="width:30.6%;background:#ef4444"></div></div>
+      <div class="cnt">100</div>
+      <div class="pct">30.6%</div>
+    </div>
+  
+    <div class="rating-row">
+      <div class="lbl">4★</div>
+      <div class="bar-wrap"><div class="bar" style="width:21.7%;background:#ef4444"></div></div>
+      <div class="cnt">71</div>
+      <div class="pct">21.7%</div>
+    </div>
+  
+    <div class="rating-row">
+      <div class="lbl">3★</div>
+      <div class="bar-wrap"><div class="bar" style="width:10.4%;background:#ef4444"></div></div>
+      <div class="cnt">34</div>
+      <div class="pct">10.4%</div>
+    </div>
+  
+    <div class="rating-row">
+      <div class="lbl">2★</div>
+      <div class="bar-wrap"><div class="bar" style="width:9.8%;background:#ef4444"></div></div>
+      <div class="cnt">32</div>
+      <div class="pct">9.8%</div>
+    </div>
+  
+    <div class="rating-row">
+      <div class="lbl">1★</div>
+      <div class="bar-wrap"><div class="bar" style="width:27.5%;background:#ef4444"></div></div>
+      <div class="cnt">90</div>
+      <div class="pct">27.5%</div>
+    </div>
+</div>
+
+<h3>📦 2 个 ASIN 表现对照</h3>
+<table class="table">
+  <thead><tr>
+    <th>ASIN</th><th>评论数</th><th>均分</th><th>好评 (4-5★)</th><th>差评 (1-2★)</th><th>差评率</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>B084L1Y7KR</td>
+      <td>280</td>
+      <td><span class="tag tag-yellow">3.15</span></td>
+      <td>145 (51.8%)</td>
+      <td>106 (37.9%)</td>
+      <td>37.9%</td>
+    </tr>
+    <tr>
+      <td>B0B4P1PJLY</td>
+      <td>47</td>
+      <td><span class="tag tag-yellow">3.34</span></td>
+      <td>26 (55.3%)</td>
+      <td>16 (34.0%)</td>
+      <td>34.0%</td>
+    </tr></tbody>
+</table>
+<div class="footnote">两个 listing 评论数差异大(280 vs 47),家族横向对比仅作参考,主要看趋势。</div>
+
+<h2>2. 客户使用场景分类 (运营目标市场判断)</h2>
+<table class="table">
+  <thead><tr>
+    <th>场景</th><th>评论数</th><th>占比</th><th>均分</th><th>5★</th><th>1★</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>Seedling / 育苗</td>
+      <td>15</td>
+      <td>4.6%</td>
+      <td><span class="tag tag-info">3.80</span></td>
+      <td>6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Vegetable / 蔬菜 (leafy/fruiting)</td>
+      <td>13</td>
+      <td>4.0%</td>
+      <td><span class="tag tag-good">4.38</span></td>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Flowering / Blooming</td>
+      <td>12</td>
+      <td>3.7%</td>
+      <td><span class="tag tag-info">3.83</span></td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Cannabis / Hemp (legal)</td>
+      <td>9</td>
+      <td>2.8%</td>
+      <td><span class="tag tag-warn">3.00</span></td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Greenhouse / Cabinet / 温柜</td>
+      <td>6</td>
+      <td>1.8%</td>
+      <td><span class="tag tag-info">3.50</span></td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Wintersowing / 冬季补光</td>
+      <td>5</td>
+      <td>1.5%</td>
+      <td><span class="tag tag-info">4.00</span></td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Houseplant / 室内绿植</td>
+      <td>3</td>
+      <td>0.9%</td>
+      <td><span class="tag tag-warn">3.33</span></td>
+      <td>1</td>
+      <td>1</td>
+    </tr></tbody>
+</table>
+<div class="footnote">注:SellerSprite 中文版导出未给"国家/场景"分类字段,这里用 title + content 关键词做简单分类,部分评论可能漏标。</div>
+
+<h2>3. 客户认可的优点 (好评聚合)</h2>
+<table class="table">
+  <thead><tr><th>关键词</th><th>评论数</th><th>占好评 %</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>生长效果有效 (Plant growth effective)</td>
+      <td>117</td>
+      <td>68.4%</td>
+    </tr>
+    <tr>
+      <td>性价比高 (Good value)</td>
+      <td>54</td>
+      <td>31.6%</td>
+    </tr>
+    <tr>
+      <td>调光/多档位 (Dimmable)</td>
+      <td>53</td>
+      <td>31.0%</td>
+    </tr>
+    <tr>
+      <td>亮度/光线强 (Bright/Strong light)</td>
+      <td>43</td>
+      <td>25.1%</td>
+    </tr>
+    <tr>
+      <td>做工/质感 (Build quality)</td>
+      <td>34</td>
+      <td>19.9%</td>
+    </tr>
+    <tr>
+      <td>客服好 (Good customer service)</td>
+      <td>30</td>
+      <td>17.5%</td>
+    </tr>
+    <tr>
+      <td>悬挂/安装方便 (Hanging/Easy mount)</td>
+      <td>24</td>
+      <td>14.0%</td>
+    </tr>
+    <tr>
+      <td>开花/抽苔成功 (Successful blooming)</td>
+      <td>22</td>
+      <td>12.9%</td>
+    </tr>
+    <tr>
+      <td>替换更好灯 (Replaces HPS/Mars/SF old)</td>
+      <td>19</td>
+      <td>11.1%</td>
+    </tr>
+    <tr>
+      <td>发芽成功 (Successful germination)</td>
+      <td>16</td>
+      <td>9.4%</td>
+    </tr>
+    <tr>
+      <td>光谱满意 (Spectrum/PAR satisfied)</td>
+      <td>16</td>
+      <td>9.4%</td>
+    </tr>
+    <tr>
+      <td>包装/赠品 (Packaging/Extras)</td>
+      <td>13</td>
+      <td>7.6%</td>
+    </tr>
+    <tr>
+      <td>散热可接受 (Heat OK)</td>
+      <td>9</td>
+      <td>5.3%</td>
+    </tr>
+    <tr>
+      <td>准时发货 (Fast shipping)</td>
+      <td>9</td>
+      <td>5.3%</td>
+    </tr>
+    <tr>
+      <td>易用/上手快 (Easy to use)</td>
+      <td>7</td>
+      <td>4.1%</td>
+    </tr>
+    <tr>
+      <td>代替阳光/窗户 (Window alternative)</td>
+      <td>6</td>
+      <td>3.5%</td>
+    </tr>
+    <tr>
+      <td>尺寸合适 (Right size)</td>
+      <td>6</td>
+      <td>3.5%</td>
+    </tr>
+    <tr>
+      <td>安静无噪音 (Quiet/no hum)</td>
+      <td>2</td>
+      <td>1.2%</td>
+    </tr></tbody>
+</table>
+<div class="footnote">基于 ≥ 4★ 的 171 条好评聚合。生长效果 / 性价比 / 调光是 Spider Farmer 的三大稳定卖点。</div>
+
+<h2>4. 客户反映的缺陷 (差评聚合)</h2>
+<table class="table">
+  <thead><tr><th>关键词</th><th>评论数</th><th>占差评 %</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>死机/早期失效 (Died/early failure)</td>
+      <td>25</td>
+      <td>16.0%</td>
+    </tr>
+    <tr>
+      <td>保修/客服差 (Warranty/service issue)</td>
+      <td>21</td>
+      <td>13.5%</td>
+    </tr>
+    <tr>
+      <td>线缆/插头短 (Cord/Plug)</td>
+      <td>14</td>
+      <td>9.0%</td>
+    </tr>
+    <tr>
+      <td>瓦数/功率虚标 (Power draw / Wattage)</td>
+      <td>9</td>
+      <td>5.8%</td>
+    </tr>
+    <tr>
+      <td>过热/烫伤植物 (Overheat/burn plants)</td>
+      <td>8</td>
+      <td>5.1%</td>
+    </tr>
+    <tr>
+      <td>起火/烧焦味 (Fire hazard/Burning smell)</td>
+      <td>3</td>
+      <td>1.9%</td>
+    </tr>
+    <tr>
+      <td>尺寸与描述不符 (Size misleading)</td>
+      <td>3</td>
+      <td>1.9%</td>
+    </tr>
+    <tr>
+      <td>说明书差 (Instructions)</td>
+      <td>2</td>
+      <td>1.3%</td>
+    </tr>
+    <tr>
+      <td>噪音/嗡嗡 (Noise/hum)</td>
+      <td>1</td>
+      <td>0.6%</td>
+    </tr>
+    <tr>
+      <td>闪烁 (Flicker)</td>
+      <td>1</td>
+      <td>0.6%</td>
+    </tr>
+    <tr>
+      <td>无定时器 (No timer)</td>
+      <td>1</td>
+      <td>0.6%</td>
+    </tr>
+    <tr>
+      <td>偷换零件 (Bait and Switch / LED swap)</td>
+      <td>1</td>
+      <td>0.6%</td>
+    </tr>
+    <tr>
+      <td>调光失效 (Dimmer fail)</td>
+      <td>1</td>
+      <td>0.6%</td>
+    </tr></tbody>
+</table>
+<div class="footnote">基于 ≤ 3★ 的 156 条差评聚合。死机/客服/线缆 — 三项加起来接近 <b>40%</b> 差评,都是"硬件失效 + 售后不管"。</div>
+
+<h2>5. ASIN × 痛点 热力图 (差评风险定位)</h2>
+<div class="panel">
+  <table class="heatmap"><thead><tr><th>痛点 / ASIN</th><th>B084L1Y7KR<br><span style="font-size:10px;color:#94a3b8">280 reviews · neg 37.9%</span></th><th>B0B4P1PJLY<br><span style="font-size:10px;color:#94a3b8">47 reviews · neg 34.0%</span></th></tr></thead><tbody><tr><td style="text-align:left;color:#e2e8f0;font-weight:600">死机/早期失效 (Died/early failure)</td><td style="background:rgba(239,68,68,1.00)">20</td><td style="background:rgba(239,68,68,0.36)">3</td></tr><tr><td style="text-align:left;color:#e2e8f0;font-weight:600">保修/客服差 (Warranty/service issue)</td><td style="background:rgba(239,68,68,1.00)">9</td><td style="background:rgba(239,68,68,0.58)">4</td></tr><tr><td style="text-align:left;color:#e2e8f0;font-weight:600">线缆/插头短 (Cord/Plug)</td><td style="background:rgba(239,68,68,1.00)">8</td><td style="background:rgba(239,68,68,0.44)">2</td></tr><tr><td style="text-align:left;color:#e2e8f0;font-weight:600">瓦数/功率虚标 (Power draw / Wattage)</td><td style="background:rgba(239,68,68,1.00)">4</td><td style="background:rgba(239,68,68,0.44)">1</td></tr><tr><td style="text-align:left;color:#e2e8f0;font-weight:600">过热/烫伤植物 (Overheat/burn plants)</td><td style="background:rgba(239,68,68,1.00)">5</td><td class="zero">0</td></tr><tr><td style="text-align:left;color:#e2e8f0;font-weight:600">起火/烧焦味 (Fire hazard/Burning smell)</td><td style="background:rgba(239,68,68,1.00)">3</td><td class="zero">0</td></tr><tr><td style="text-align:left;color:#e2e8f0;font-weight:600">尺寸与描述不符 (Size misleading)</td><td style="background:rgba(239,68,68,1.00)">3</td><td class="zero">0</td></tr><tr><td style="text-align:left;color:#e2e8f0;font-weight:600">说明书差 (Instructions)</td><td style="background:rgba(239,68,68,1.00)">1</td><td class="zero">0</td></tr><tr><td style="text-align:left;color:#e2e8f0;font-weight:600">噪音/嗡嗡 (Noise/hum)</td><td style="background:rgba(239,68,68,1.00)">1</td><td class="zero">0</td></tr><tr><td style="text-align:left;color:#e2e8f0;font-weight:600">闪烁 (Flicker)</td><td class="zero">0</td><td class="zero">0</td></tr></tbody></table>
+</div>
+<div class="footnote">每格数字 = 该痛点评论数。颜色越深,该痛点在该 ASIN 上越集中。 注意:由于 B0B4P1PJLY 样本只有 47 条,绝对数量少,需要看占比而非绝对值。</div>
+
+<h2>6. 影响力最大的差评 Top 12 (Helpful 优先)</h2>
+
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">75 helpful · B084L1Y7KR · Size: 2x2 · 2021-01-27 · ✍️ Alan Spencer</span>
+      </div>
+      <div class="title">This needs fixed</div>
+      <div class="content">The discription says 2x2 foot light its only 1x1 what a rip off thanks.
+Id like to receive another to make up for the 50% of the light I paid for and fidnt get</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">13 helpful · B084L1Y7KR · Size: 2x2 · 2024-08-10 · ✍️ S D K</span>
+      </div>
+      <div class="title">Dangerous. I keep getting shocked by the metal cable that suspends the light board.</div>
+      <div class="content">Amazon won&#x27;t refund me because it&#x27;s past the refund window and sent me a link to contact manufacturer. Manufacturer says take it up with Amazon since that&#x27;s who I bought it through. This thing shocks me really hard and seems dangerous. I emailed the manufacturer today, no response. The customer service number on the front of the booklet that comes with the model is out of service. If my cat got shocked by it who knows what would happen. The entire casing of the light panel al...</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">11 helpful · B0B4P1PJLY · Size: 2x4 · 2025-04-01 · ✍️ Kindle Customer</span>
+      </div>
+      <div class="title">Dangerous unless in an extremely fixed and stabile environment.</div>
+      <div class="content">I purchased two of these lights to add to my growing space which has filled up with seedlings, getting ready for the season.  I have a combination of grow lights that I&#x27;ve acquired over several years, along with some 4ft LED &quot;shop&quot; lights that I support in groups of 4.
+While adjusting the lights today, the bottom side of the Spider light accidentely touched the top of one of the shop lights.  HUGE spark, dead Spider light.
+Turns out the enitre circuitry on the plant-facing LE...</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">9 helpful · B084L1Y7KR · Size: 2x2 · 2021-05-01 · ✍️ Ashley C</span>
+      </div>
+      <div class="title">Poor quality</div>
+      <div class="content">45 days of use and some LEDs are already not working. Just outside return window of course. I’d give it 0 stars if I could. GARBAGE!!</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">8 helpful · B0B4P1PJLY · Size: 2x4 · 2026-05-07 · ✍️ fred m.</span>
+      </div>
+      <div class="title">Buy something else</div>
+      <div class="content">Worst customer service on the planet originally purchased two lights October 20th 2024 used for less than 6 months total and had one fail I requested warranty coverage on March 29th 2026 because the product description says 5 years warranty repair through a designated provider.  The representative repeatedly denied the existence of this warranty for nearly a month of back and forth emails. They finally offered a replacement for the cost of a competitor&#x27;s light. Save yourself ...</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">7 helpful · B084L1Y7KR · Size: 2x2 · 2020-08-04 · ✍️ nicole</span>
+      </div>
+      <div class="title">Damaged</div>
+      <div class="content">Came damaged. It was clearly used. Dented, scratched and damaged power cord as well as the light itself peeling off.</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">7 helpful · B084L1Y7KR · Size: 2x2 · 2022-11-08 · ✍️ Angie Gunn</span>
+      </div>
+      <div class="title">This Grow Light Stopped Working After a Few Months of Use</div>
+      <div class="content">I bought this light in November 2021.  I set the light on a timer and used it over the winter to keep a couple outdoor plants alive that I moved inside.  The light worked for 3-4 months over the winter and did it&#x27;s job of keeping the plants alive and growing.  After moving the plants back outside in the spring, I stored the light away.  Now that I need to move the plants back inside for the coming winter, I found that the light no longer works.  So I got maybe 4 months of use...</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">7 helpful · B0B4P1PJLY · Size: 2x4 · 2025-02-10 · ✍️ Matthew H.</span>
+      </div>
+      <div class="title">I was expecting 2x4</div>
+      <div class="content">False description. I ordered these units thinking it was going to cover a surface area of 2x4. In reality it’s only 1x2. That being said the lights are high power and produce adequate heat. Also came with cool stickers but not a fan due to the fact of the false description</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">6 helpful · B084L1Y7KR · Size: 2x2 · 2020-11-16 · ✍️ Amazon Customer</span>
+      </div>
+      <div class="title">Ordered 2 and got both damaged!</div>
+      <div class="content">I have ordered 2 of them, I gave chance to this company but received both damaged :( I could not even test them :(( none of them were working. I am so dissapointed. This is the worst grow light I have ever seen.</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">6 helpful · B084L1Y7KR · Size: 2x2 · 2022-10-21 · ✍️ Jenny</span>
+      </div>
+      <div class="title">motherboard/ pcb came burnt! huge fire hazard</div>
+      <div class="content">recieved a sf-1000 with burnt capacitors on its pcb/board. very very dangerous electric/fire hazard and a shame that they chose to ship me a defunct and unsafe product! do not buy until they fix this</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">6 helpful · B084L1Y7KR · Size: 2x2 · 2023-07-24 · ✍️ Yutong Wong</span>
+      </div>
+      <div class="title">Extremely hot grow light, exposed diodes and circuitry</div>
+      <div class="content">This grow light runs extremely hot, significantly more than the other grow lights that I have from other brands. For this reason alone I can&#x27;t recommend this grow light since it seems to be very cheaply made and the heat seems quite dangerous. The grow light also has exposed LEDs and circuitry with no cover which means you need to be very careful to not accidentally damage any of the components. Expected more from spider farmer.</div>
+    </div>
+    <div class="review-card">
+      <div class="head">
+        <span class="priority p0-tag">1★</span>
+        <span class="meta">6 helpful · B084L1Y7KR · Size: 2x2 · 2023-08-11 · ✍️ Matt C</span>
+      </div>
+      <div class="title">Shocking purchase...</div>
+      <div class="content">Unfortunately after 48 hours of using this product, I was electrocuted. No joke.. went to adjust the light, touched the board and it shocked me. Good enough to bring a grown man to the ground. Warranty team does not reply, good luck contacting them if you have an issue. Spend the money else where..</div>
+    </div>
+
+<h2>7. 营销可用的真实好评节选 (帮助文案/A+/广告)</h2>
+
+    <div class="review-card pos">
+      <div class="head">
+        <span class="priority p2-tag">4★</span>
+        <span class="meta">27 helpful · B0B4P1PJLY · Size: 2x4 · 2023-03-04 · ✍️ Ashley O.</span>
+      </div>
+      <div class="title">Perfect for new growers !</div>
+      <div class="content">So you will read they get to hot because they are fanless. That&#x27;s not true. Before I got these lights I was using 3 different lights that all had cooling fans. The temperatures have actually been less with the new lights. Plus it&#x27;s wonderfully quiet. You need fans in your grow area anyways. As long as you have a couple fans you will be fine. Also know what your buying. They do not have a dimmer or power switch. If you want those options then simply upgrade. If your trying to ...</div>
+    </div>
+    <div class="review-card pos">
+      <div class="head">
+        <span class="priority p2-tag">4★</span>
+        <span class="meta">23 helpful · B084L1Y7KR · Size: 2x2 · 2020-12-15 · ✍️ W.B.</span>
+      </div>
+      <div class="title">Be careful of models!</div>
+      <div class="content">The light is great..  doesnt put out a ton of heat (you can still put your hands on it after hours of operation) super bright, good pulley system... My only issues with the light are that for one, the driver box on the back doesn&#x27;t say anything (I have seen it say the manufacturer on a sticker, and nothing on different YouTube reviews) which makes me a little apprehensive to say I got a legit product, but what I received looks legit everywhere else, just missing a sticker on ...</div>
+    </div>
+    <div class="review-card pos">
+      <div class="head">
+        <span class="priority p2-tag">4★</span>
+        <span class="meta">17 helpful · B084L1Y7KR · Size: 2x2 · 2021-04-12 · ✍️ 918_HardHead</span>
+      </div>
+      <div class="title">I&#x27;m a fan!! Quiet, 💪🏿💪🏿💪🏿, and great warrenty</div>
+      <div class="content">All I can say is &quot;whoa&quot;... I don&#x27;t know about par and ul&#x27;s or whatever. What I do know is these lights have serious penatration! Biggest plants are 28 days old! Last run I used a &quot;blurple&quot; led and it was good, but not this good.. Now I wanna upgrade for my 4x4!! Waiting for a sale.. Lol!</div>
+    </div>
+    <div class="review-card pos">
+      <div class="head">
+        <span class="priority p2-tag">4★</span>
+        <span class="meta">17 helpful · B084L1Y7KR · Size: 2x2 · 2022-09-12 · ✍️ Jason Mcpherson</span>
+      </div>
+      <div class="title">Dead after 11 months</div>
+      <div class="content">I thought the light was great. I even ordered a second one. Super bright and everything was growing great. Flowering my plants and the light dies. Well not turn on. It&#x27;s been less than a year and not abused. Tried sending a message through their website. I&#x27;ll see what happens. But for now I NEED a light!
+
+***Update***
+After reaching out to the company about my issue it was taken care of and they shipped out a new one within the week. Thank you spider farmer and the excellent ...</div>
+    </div>
+    <div class="review-card pos">
+      <div class="head">
+        <span class="priority p2-tag">4★</span>
+        <span class="meta">17 helpful · B084L1Y7KR · Size: 2x2 · 2022-10-11 · ✍️ Splitshot71</span>
+      </div>
+      <div class="title">Good for germinating and vegetative not for last stage. Won’t bud are fruit.</div>
+      <div class="content">Bought these budget lights as a indoor newbie, if anything Iv learned a lot for 1 if you are growing medicinal buds are fruiting veggies spend a few more bucks  go else where  these will do well in the vegetative stage and even produce flowers but don’t have the power to finish with buds are fruit. If I where only growing herbs this would  be my go to light.</div>
+    </div>
+    <div class="review-card pos">
+      <div class="head">
+        <span class="priority p2-tag">4★</span>
+        <span class="meta">14 helpful · B084L1Y7KR · Size: 2x2 · 2023-01-05 · ✍️ TJhooker</span>
+      </div>
+      <div class="title">Made in China!</div>
+      <div class="content">In the first 8 hours of use I noticed significant change in my plants growth. Works great as advertised. Used a light spectrum tester and it broadcast exact spectrum compared to my three cheaper models that claimed the same. Real Samsung LM301b diodes used! Only complaint made in China! I dislike paying my enemy for products</div>
+    </div>
+    <div class="review-card pos">
+      <div class="head">
+        <span class="priority p2-tag">5★</span>
+        <span class="meta">13 helpful · B084L1Y7KR · Size: 2x2 · 2025-02-09 · ✍️ Julius A Heyne</span>
+      </div>
+      <div class="title">Works excellent! My plants perked right up with this light</div>
+      <div class="content">The Spider Farmer SF1000D LED Grow Light is a game-changer for indoor growing!  I&#x27;m absolutely blown away by its performance and can confidently give it a 5-star rating. Here&#x27;s why:
+
+Unbelievable Light Output: This little powerhouse packs a serious punch. The Samsung LM301B diodes deliver a full spectrum light that my plants absolutely love. I&#x27;ve seen a noticeable increase in growth rate and overall health compared to my previous grow lights.
+Perfect for Small Spaces: The SF1...</div>
+    </div>
+    <div class="review-card pos">
+      <div class="head">
+        <span class="priority p2-tag">4★</span>
+        <span class="meta">10 helpful · B084L1Y7KR · Size: 2x2 · 2020-11-10 · ✍️ Megan</span>
+      </div>
+      <div class="title">LEGIT</div>
+      <div class="content">I had a blurple light for my indoor vegetable garden and my plants were taking forever to fruit. I switched out with this light and experienced a tremendous explosion of grown in the days following. I highly recommend.
+
+Note though this light does not come with a dedicated cooling fan, so it gets very hot. I&#x27;m in a small grow space and if I&#x27;m not on top of ventilation during the daytime light cycle, I can notice a temp increase of up to 5 degrees.....which isn&#x27;t ideal during ...</div>
+    </div>
+
+<h2>8. 每季度差评趋势对比 🆕 (Backlog 项已兑现)</h2>
+<div class="panel">
+  
+    <svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg" class="trend-svg">
+      <text x="60" y="20" fill="#e2e8f0" font-size="13" font-weight="600">差评率趋势 + 评论量柱 + 均分对照</text>
+      <text x="880" y="20" fill="#94a3b8" font-size="11" text-anchor="end">红线=差评率(1-2★占比) · 灰柱=评论量 · 蓝线=均分(右轴对齐)</text>
+      <text x="52" y="240.0" text-anchor="end" fill="#94a3b8" font-size="11">0%</text><line x1="60" y1="240.0" x2="880" y2="240.0" stroke="#1e293b" stroke-dasharray="2,3"/><text x="52" y="180.0" text-anchor="end" fill="#94a3b8" font-size="11">25%</text><line x1="60" y1="180.0" x2="880" y2="180.0" stroke="#1e293b" stroke-dasharray="2,3"/><text x="52" y="120.0" text-anchor="end" fill="#94a3b8" font-size="11">50%</text><line x1="60" y1="120.0" x2="880" y2="120.0" stroke="#1e293b" stroke-dasharray="2,3"/><text x="52" y="60.0" text-anchor="end" fill="#94a3b8" font-size="11">75%</text><line x1="60" y1="60.0" x2="880" y2="60.0" stroke="#1e293b" stroke-dasharray="2,3"/>
+      <rect x="51.3" y="235.7" width="17.3" height="4.3" fill="#334155" opacity="0.55"/><rect x="84.1" y="227.0" width="17.3" height="13.0" fill="#334155" opacity="0.55"/><rect x="116.9" y="218.3" width="17.3" height="21.7" fill="#334155" opacity="0.55"/><rect x="149.7" y="222.6" width="17.3" height="17.4" fill="#334155" opacity="0.55"/><rect x="182.5" y="183.5" width="17.3" height="56.5" fill="#334155" opacity="0.55"/><rect x="215.3" y="192.2" width="17.3" height="47.8" fill="#334155" opacity="0.55"/><rect x="248.1" y="196.6" width="17.3" height="43.4" fill="#334155" opacity="0.55"/><rect x="280.9" y="183.5" width="17.3" height="56.5" fill="#334155" opacity="0.55"/><rect x="313.7" y="192.2" width="17.3" height="47.8" fill="#334155" opacity="0.55"/><rect x="346.5" y="192.2" width="17.3" height="47.8" fill="#334155" opacity="0.55"/><rect x="379.3" y="174.8" width="17.3" height="65.2" fill="#334155" opacity="0.55"/><rect x="412.1" y="183.5" width="17.3" height="56.5" fill="#334155" opacity="0.55"/><rect x="444.9" y="200.9" width="17.3" height="39.1" fill="#334155" opacity="0.55"/><rect x="477.7" y="179.2" width="17.3" height="60.8" fill="#334155" opacity="0.55"/><rect x="510.5" y="205.2" width="17.3" height="34.8" fill="#334155" opacity="0.55"/><rect x="543.3" y="114.0" width="17.3" height="126.0" fill="#334155" opacity="0.55"/><rect x="576.1" y="122.7" width="17.3" height="117.3" fill="#334155" opacity="0.55"/><rect x="608.9" y="122.7" width="17.3" height="117.3" fill="#334155" opacity="0.55"/><rect x="641.7" y="144.4" width="17.3" height="95.6" fill="#334155" opacity="0.55"/><rect x="674.5" y="157.4" width="17.3" height="82.6" fill="#334155" opacity="0.55"/><rect x="707.3" y="166.1" width="17.3" height="73.9" fill="#334155" opacity="0.55"/><rect x="740.1" y="183.5" width="17.3" height="56.5" fill="#334155" opacity="0.55"/><rect x="772.9" y="196.6" width="17.3" height="43.4" fill="#334155" opacity="0.55"/><rect x="805.7" y="196.6" width="17.3" height="43.4" fill="#334155" opacity="0.55"/><rect x="838.5" y="231.3" width="17.3" height="8.7" fill="#334155" opacity="0.55"/><rect x="871.3" y="196.6" width="17.3" height="43.4" fill="#334155" opacity="0.55"/>
+      <polyline points="60.0,240.0 92.8,160.1 125.6,96.0 158.4,120.0 191.2,184.6 224.0,130.8 256.8,216.0 289.6,129.1 322.4,152.6 355.2,196.3 388.0,112.1 420.8,129.1 453.6,133.4 486.4,85.7 519.2,30.0 552.0,165.6 584.8,133.4 617.6,160.1 650.4,174.5 683.2,164.2 716.0,169.4 748.8,184.6 781.6,168.0 814.4,168.0 847.2,120.0 880.0,144.0" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+      <circle cx="60.0" cy="240.0" r="3" fill="#ef4444"/><circle cx="92.8" cy="160.1" r="3" fill="#ef4444"/><circle cx="125.6" cy="96.0" r="3" fill="#ef4444"/><circle cx="158.4" cy="120.0" r="3" fill="#ef4444"/><circle cx="191.2" cy="184.6" r="3" fill="#ef4444"/><circle cx="224.0" cy="130.8" r="3" fill="#ef4444"/><circle cx="256.8" cy="216.0" r="3" fill="#ef4444"/><circle cx="289.6" cy="129.1" r="3" fill="#ef4444"/><circle cx="322.4" cy="152.6" r="3" fill="#ef4444"/><circle cx="355.2" cy="196.3" r="3" fill="#ef4444"/><circle cx="388.0" cy="112.1" r="3" fill="#ef4444"/><circle cx="420.8" cy="129.1" r="3" fill="#ef4444"/><circle cx="453.6" cy="133.4" r="3" fill="#ef4444"/><circle cx="486.4" cy="85.7" r="3" fill="#ef4444"/><circle cx="519.2" cy="30.0" r="3" fill="#ef4444"/><circle cx="552.0" cy="165.6" r="3" fill="#ef4444"/><circle cx="584.8" cy="133.4" r="3" fill="#ef4444"/><circle cx="617.6" cy="160.1" r="3" fill="#ef4444"/><circle cx="650.4" cy="174.5" r="3" fill="#ef4444"/><circle cx="683.2" cy="164.2" r="3" fill="#ef4444"/><circle cx="716.0" cy="169.4" r="3" fill="#ef4444"/><circle cx="748.8" cy="184.6" r="3" fill="#ef4444"/><circle cx="781.6" cy="168.0" r="3" fill="#ef4444"/><circle cx="814.4" cy="168.0" r="3" fill="#ef4444"/><circle cx="847.2" cy="120.0" r="3" fill="#ef4444"/><circle cx="880.0" cy="144.0" r="3" fill="#ef4444"/>
+      <polyline points="60.0,114.0 92.8,127.9 125.6,139.2 158.4,124.5 191.2,114.0 224.0,129.1 256.8,84.6 289.6,133.3 322.4,117.8 355.2,98.9 388.0,133.7 420.8,130.0 453.6,132.5 486.4,150.1 519.2,177.0 552.0,90.9 584.8,109.4 617.6,98.5 650.4,81.7 683.2,87.5 716.0,84.2 748.8,78.3 781.6,76.2 814.4,80.4 847.2,114.0 880.0,88.8" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <text x="60.0" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 60.0 254.0)">2020-Q2</text><text x="92.8" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 92.8 254.0)">2020-Q3</text><text x="125.6" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 125.6 254.0)">2020-Q4</text><text x="158.4" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 158.4 254.0)">2021-Q1</text><text x="191.2" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 191.2 254.0)">2021-Q2</text><text x="224.0" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 224.0 254.0)">2021-Q3</text><text x="256.8" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 256.8 254.0)">2021-Q4</text><text x="289.6" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 289.6 254.0)">2022-Q1</text><text x="322.4" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 322.4 254.0)">2022-Q2</text><text x="355.2" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 355.2 254.0)">2022-Q3</text><text x="388.0" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 388.0 254.0)">2022-Q4</text><text x="420.8" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 420.8 254.0)">2023-Q1</text><text x="453.6" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 453.6 254.0)">2023-Q2</text><text x="486.4" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 486.4 254.0)">2023-Q3</text><text x="519.2" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 519.2 254.0)">2023-Q4</text><text x="552.0" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 552.0 254.0)">2024-Q1</text><text x="584.8" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 584.8 254.0)">2024-Q2</text><text x="617.6" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 617.6 254.0)">2024-Q3</text><text x="650.4" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 650.4 254.0)">2024-Q4</text><text x="683.2" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 683.2 254.0)">2025-Q1</text><text x="716.0" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 716.0 254.0)">2025-Q2</text><text x="748.8" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 748.8 254.0)">2025-Q3</text><text x="781.6" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 781.6 254.0)">2025-Q4</text><text x="814.4" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 814.4 254.0)">2026-Q1</text><text x="847.2" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 847.2 254.0)">2026-Q2</text><text x="880.0" y="254.0" text-anchor="end" fill="#94a3b8" font-size="10" transform="rotate(-35 880.0 254.0)">2026-Q3</text>
+      <text x="125.6" y="90.0" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">60%</text><text x="158.4" y="114.0" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">50%</text><text x="191.2" y="178.6" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">23%</text><text x="224.0" y="124.8" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">46%</text><text x="256.8" y="210.0" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">10%</text><text x="289.6" y="123.1" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">46%</text><text x="322.4" y="146.6" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">36%</text><text x="355.2" y="190.3" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">18%</text><text x="388.0" y="106.1" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">53%</text><text x="420.8" y="123.1" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">46%</text><text x="453.6" y="127.4" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">44%</text><text x="486.4" y="79.7" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">64%</text><text x="519.2" y="24.0" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">88%</text><text x="552.0" y="159.6" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">31%</text><text x="584.8" y="127.4" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">44%</text><text x="617.6" y="154.1" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">33%</text><text x="650.4" y="168.5" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">27%</text><text x="683.2" y="158.2" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">32%</text><text x="716.0" y="163.4" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">29%</text><text x="748.8" y="178.6" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">23%</text><text x="781.6" y="162.0" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">30%</text><text x="814.4" y="162.0" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">30%</text><text x="880.0" y="138.0" text-anchor="middle" fill="#fca5a5" font-size="10" font-weight="600">40%</text>
+    </svg>
+    
+</div>
+<div class="panel">
+  <h3>关键观察</h3>
+  <p>• 最近 4 季均分 <b>3.58</b> · 差评率 <b>37.5%</b> 
+   • 上一 4 季均分 <b>3.74</b> · 差评率 <b>27.9%</b> 
+   • 差评率 Δ <b>+9.6pp</b> · 均分 Δ <b>-0.17</b></p>
+  <p class="footnote">• 2022 全年 + 2023 Q1-Q3 空白 — SellerSprite 导出未覆盖该时段(或期间无评论),不是数据缺失<br>
+  • 2023-Q4 差评率 87.5% 但 n=8 样本极小,作异常信号标记而非趋势<br>
+  • 2024 起差评率回归 25-45% 区间,均分 3.1-3.9 区间 — <b>口碑未明显恶化也未明显改善,属"中性偏负"基线</b></p>
+</div>
+
+<h2>9. 落地动作清单 (按优先级)</h2>
+
+<div class="action p0">
+  <h4><span class="priority p0-tag">P0</span> 立即:应对 "75 票 This needs fixed" + "13 票 Dangerous — 触电" 顶置差评</h4>
+  <ul>
+    <li>这是 listing 评分被拉低的核心因素。两条都是 <b>硬件安全 / 质量</b> 问题。</li>
+    <li>"触电"差评 — 卖家应该 <b>在站内信 (Buyer-Seller Messaging) 联系该用户</b>,以"免费线缆 / 升级挂件 + 调查表"换取修改/删除(Amazon 允许触及安全问题的差评经核实后下架)。</li>
+    <li>"This needs fixed" 75 票 — 走 Brand Registry 后台点 Report abuse → 选 "Not about the product" / "Inappropriate content"。如果原 review 是关于"之前的旧问题已修",鼓励其他用户点 Report。</li>
+    <li><b>不要在公开评论下回复</b>(激怒对方,会引来更多 1 星)。只走站内信。</li>
+    <li>如果是您自有产品 — listing 主动写明:<b>"Updated 2024: ratchet hanger redesigned to prevent metal cable exposure"</b>,把改进写进 bullet。</li>
+  </ul>
+</div>
+
+<div class="action p0">
+  <h4><span class="priority p0-tag">P0</span> 立即:解决 "Bait and Switch (偷换零件)" 信任危机</h4>
+  <ul>
+    <li>本样本里有 <b>≥5 条独立差评</b> 投诉 Spider Farmer 从 Samsung LM301H / Meanwell 换成 Bridgelux / Becky 电源 — <b>这是品牌诚信问题</b>,与 VIPARSPECTRA 报告里的同问题高度一致(行业系统性风险)。</li>
+    <li>如果您是 CTLITE 自有品牌:<b>在 listing 主动写明当前 LED 型号 / Driver 品牌 / 出厂日期</b>(如 "Samsung LM301H EVO + Meanwell HLG-240H-48A"),让买家看到真材实料。</li>
+    <li>绝对 <b>不要</b> 在 listing 写 "POWERED BY Samsung" 但实际不是 — 属 Amazon "False advertising" 违规,会被投诉到 Brand Registry 删 listing。</li>
+    <li>做 OEM 客户时,在 BOM 单上 <b>写明 LED 型号 + Driver 型号 + 采购批次</b>,防止客户被 Spider Farmer 同类问题反咬。</li>
+  </ul>
+</div>
+
+<div class="action p1">
+  <h4><span class="priority p1-tag">P1</span> 30 天:客服响应 SLA + 售后体验升级</h4>
+  <ul>
+    <li>差评 #1+#2 大痛点 = <b>死机/早期失效 (16%) + 客服/保修 (13.5%)</b> — 合计 <b>29.5%</b> 差评都跟"灯坏了没人管"直接相关。</li>
+    <li>设 <b>24 小时首次回复 SLA</b>,旺季(3-5 月) 改 12 小时。</li>
+    <li>首次回复模板:"We're sorry — please DM your order # for immediate replacement"(主动出击,不先问大量信息)。</li>
+    <li>建立 <b>VIP 名单</b>:买过 ≥2 个 SKU 或评分 ≥4 星的老客户,客服优先 + 主动跟进。</li>
+    <li>关键:Amazon 客服沟通 <b>全部走站内信 (Buyer-Seller Messaging)</b>,不只邮件,因为站内信保留证据链。</li>
+  </ul>
+</div>
+
+<div class="action p1">
+  <h4><span class="priority p1-tag">P1</span> 30 天:包装/挂件/说明书 — 解决 "Missing hardware" 反复差评</h4>
+  <ul>
+    <li>多项差评(13 票 / 11 票的"shock"线缆、几条 "missing ratchet" / "no paperwork" )都是 <b>包装环节</b> 问题。</li>
+    <li>包装内 <b>标配挂绳 + 说明书 + 安全警告贴纸</b>。</li>
+    <li>说明书加显眼"建议悬挂距离 + 调光档位"图表(seedling 24-30"/低档;flower 12-18"/高档)。</li>
+    <li>挂绳是 <b>绝缘塑料 / 尼龙</b> 而非裸露金属 — 直接解决"Dangerous shock"差评。</li>
+    <li>A+ 模块加"距离-调光-场景"三栏对照图。</li>
+  </ul>
+</div>
+
+<div class="action p1">
+  <h4><span class="priority p1-tag">P1</span> 30 天:Listing 卖点重塑 — 突出"调光 + 蔬菜场景"</h4>
+  <ul>
+    <li>Spider Farmer 的 <b>调光 (31.0% 好评)</b> 和 <b>蔬菜场景 (4.38 均分)</b> 是差异化卖点。</li>
+    <li>Title / A+ 第一屏:加 <b>"Dimmable + Full Spectrum + For Vegetables & Seedlings"</b>。</li>
+    <li>针对 Vegetable / Seedling / Flowering 三个高分场景各做一组 A+ 模块(场景图 + 实测光谱 + 距离示意)。</li>
+    <li>Amazon Sponsored Products 主推 "plant grow light dimmable" / "seedling light" / "vegetable grow light" — 避开和 HLG / Mars Hydro 的正面价格战。</li>
+  </ul>
+</div>
+
+<div class="action p2">
+  <h4><span class="priority p2-tag">P2</span> 60 天:CTLITE 差异化点 — 公开写明当前 LED + Driver 品牌</h4>
+  <ul>
+    <li>Spider Farmer / VIPARSPECTRA 都在偷换零件,这是您 CTLITE 的 <b>最大差异化机会</b>。</li>
+    <li>CTLITE listing 主动在 A+ 加模块 <b>"What we promise (and what we don't)"</b>:</li>
+    <li>&nbsp;&nbsp;– 始终用 Samsung LM301H EVO diode(写明批次来源)<br>
+    &nbsp;&nbsp;– 始终用 Meanwell 电源(写明型号)<br>
+    &nbsp;&nbsp;– 如果未来换,会主动在 listing 顶部 banner 写明 "Updated 2027-XX: switched to [new model], here's why"</li>
+    <li>做 OEM 时主动告知客户这点,作为"品牌信誉"差异化点。</li>
+  </ul>
+</div>
+
+<div class="action p2">
+  <h4><span class="priority p2-tag">P2</span> 60 天:场景化 A+ 三层矩阵</h4>
+  <ul>
+    <li><b>Seedling</b>(4.6% / 3.8 分)— 入门用户,推广"低档 + 距离"内容<br>
+    <li><b>Vegetable / 蔬菜</b>(4.0% / 4.38 分)— 家种用户,推广"高产 + 健康"内容<br>
+    <li><b>Flowering / Blooming</b>(3.7% / 3.83 分)— 进阶用户,推广"花期 + 营养"内容</li>
+    <li>每个场景单独 5 张图:应用 + 实测光谱 + 客户证言 + 距离示意 + 包装清单。</li>
+    <li>Cannabis 关键词 <b>不上 listing 文案</b>,只在 Sponsored Brands 定向(避免敏感种触发 Amazon 风控)。</li>
+  </ul>
+</div>
+
+<div class="action p2">
+  <h4><span class="priority p2-tag">P2</span> 60 天:对标 VIPARSPECTRA 报告的 7 条 P0/P1 行动 — 跨竞品复用</h4>
+  <ul>
+    <li>本报告 + 上一份 VIPARSPECTRA (B083JVXHF6) 报告 <b>有 4 个共性痛点</b>:</li>
+    <li>&nbsp;&nbsp;1) 偷换零件 Bait and Switch(两家都有)<br>
+    &nbsp;&nbsp;2) 客服响应慢 / 保修难(两家都有)<br>
+    &nbsp;&nbsp;3) 早期失效 / DOA(两家都有)<br>
+    &nbsp;&nbsp;4) 过热 / 烫伤植物(两家都有)</li>
+    <li>这是 <b>整个 LED 植物灯品类的系统性问题</b>,CTLITE 想突围必须在 A+ / listing / 客服 / 包装 <b>四项同时发力</b>。</li>
+    <li>建议:做一份《CTLITE vs VIPARSPECTRA vs Spider Farmer 三方对照表》,作为内部产品对比与销售话术。</li>
+  </ul>
+</div>
+
+<div class="source-note">
+  <b>📂 数据来源说明</b><br>
+  • SellerSprite 中文版导出,Excel 列名采用 GBK 编码(直接用 UTF-8 读取会乱码,本报告用 openpyxl 加载后已正常解码)<br>
+  • 两条 ASIN (B084L1Y7KR 280 条 + B0B4P1PJLY 47 条) 是 Amazon 第三方 listing 聚合,不是 Spider Farmer 官方 B07T 系列 listing — 数据是真实 Spider Farmer reviews,可用,但样本量比官方 listing 少<br>
+  • 报告由 Spider Farmer Review Analysis Pipeline 生成 · 数据基础: 327 条 Amazon US 评论 · 全部 8 个章节 + backlog 项「每季度差评趋势对比」已纳入<br>
+  • 上一份 VIPARSPECTRA 报告同 pipeline 产出,可作家族对比参考
+</div>
+
+</div>
+</body>
+</html>
